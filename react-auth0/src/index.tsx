@@ -5,9 +5,10 @@ import Config from "./config";
 import App from "./App";
 
 ReactDOM.render(
+  // front側のAuth0のアプリで認証する
   <Auth0Provider
     domain={Config.auth0Domain}
-    clientId={Config.auth0ClientID}
+    clientId={Config.auth0FrontendClientID}
     redirectUri={window.location.origin}
   >
     <App />

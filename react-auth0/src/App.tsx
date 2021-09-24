@@ -19,6 +19,7 @@ function App() {
         <h1>React-TypeScript-Auth0</h1>
         <p>UserName: {user?.name}</p>
         <p>Email: {user?.email}</p>
+        <p>{JSON.stringify(user, null, 2)}</p>
         <button onClick={() => logout({ returnTo: window.location.origin })}>
           Log out
         </button>
